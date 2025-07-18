@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import Logo from '../images/logo.png';
 
 import {
   Home,
@@ -91,7 +92,7 @@ const Header = ({ activeMenu, setActiveMenu }) => {
   return (
     <div className="bg-gradient-to-r to-orange-100 from-orage-200  border-b flex items-center text-3xl leading-none">
       {/* 로고 */}
-      <img src="/src/images/logo.png" className="pl-3 w-24 h-auto"/>
+      <img src={Logo} className="pl-3 w-24 h-auto"/>
       <div className="flex flex-col flex-shrink-0 text-left pl-3 pt-2">
         {/* <span className="text-amber-700 font-bold">CSPI</span> */}
         <span className="text-gray-600">Service Hub</span>
